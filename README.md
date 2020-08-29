@@ -7,3 +7,5 @@ React Native Template
 - Redux
 - eslint
 - prettier
+- husky
+- link-staged
