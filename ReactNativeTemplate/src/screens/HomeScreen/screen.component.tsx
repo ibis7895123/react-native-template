@@ -8,10 +8,10 @@ export interface DispatchProps {}
 type Props = StateProps & DispatchProps
 
 export default class HomeScreen extends PureComponent<Props> {
-  render(): JSX.Element {
+  render() {
     return (
-      <View>
-        <Text style={styles.container}>Hello Home</Text>
+      <View style={styles.container}>
+        <Text>Hello Home</Text>
       </View>
     )
   }
@@ -20,5 +20,7 @@ export default class HomeScreen extends PureComponent<Props> {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
   },
 })
