@@ -1,5 +1,5 @@
 import { createStackNavigator } from '@react-navigation/stack'
-import { screens, screenNames, screenComponents } from '@src/constants/screens'
+import { screens } from '@src/constants/screens'
 import React from 'react'
 
 const Stack = createStackNavigator()
@@ -7,10 +7,13 @@ const Stack = createStackNavigator()
 const StackContainer = () => (
   <React.Fragment>
     <Stack.Navigator>
-      <Stack.Screen
-        name={screenNames[screens.Home]}
-        component={screenComponents[screens.Home]}
-      />
+      {Object.values(screens).map((screen) => (
+        <Stack.Screen
+          key={screen.routeName}
+          name={screen.displayName}
+          component={screen.component}
+        />
+      ))}
     </Stack.Navigator>
   </React.Fragment>
 )

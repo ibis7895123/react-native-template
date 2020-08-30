@@ -1,13 +1,9 @@
 import HomeScreen from '@src/screens/HomeScreen/screen.component'
 
-export enum screens {
-  Home = 'Home',
-}
-
-export enum screenNames {
-  Home = 'ホーム',
-}
-
-export const screenComponents = {
-  Home: HomeScreen,
+export const screens = {
+  Home: {
+    routeName: 'Home',
+    displayName: 'ホーム',
+    component: HomeScreen,
+  },
 }
