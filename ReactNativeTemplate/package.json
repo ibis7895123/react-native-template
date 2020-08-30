@@ -48,7 +48,9 @@
     "pre-commit": "^1.2.2",
     "prettier": "^2.1.1",
     "react-test-renderer": "16.13.1",
-    "typescript": "^3.8.3"
+    "typescript": "^3.8.3",
+    "typescript-fsa": "^3.0.0",
+    "typescript-fsa-reducers": "^1.2.2"
   },
   "jest": {
     "preset": "react-native",
